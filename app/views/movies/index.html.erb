@@ -1,0 +1,30 @@
+<h1>Movies list of 2015</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Realese year</th>
+    <th>Lead Role</th>
+    <th>Director</th>
+  </tr>
+
+
+  <% @movies.each do |t| %>
+      <tr>
+        <td><%= t.name  %></td>
+        <td><%= t.realese  %></td>
+        <td><%= t.actor  %></td>
+        <td><%= t.director  %> </td>
+      </tr>
+  <% end %>
+</table>
+
+
+<% form_tag movies_path, :method => 'get' do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    </p>
+<% end %>
+
+
