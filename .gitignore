@@ -8,7 +8,7 @@
 /.bundle
 
 # Ignore rubymine project settings
-/.idea
+.idea
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
