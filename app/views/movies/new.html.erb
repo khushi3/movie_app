@@ -1,33 +1,28 @@
 <%= form_for :movie, url: movies_path do |f| %>
-    <p>
-      <%= f.label :title %><br>
-      <%= f.text_field :name %>
-    </p>
-    <head>
-      <meta charset="utf-8">
-      <title>jQuery UI Datepicker - Default functionality</title>
-      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
-      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-      <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-      <link rel="stylesheet" href="/resources/demos/style.css">
-      <script>
-          $(function() {
-              $( "#datepicker" ).datepicker();
-          });
-      </script>
-    </head>
-    <body>
-    <p>Date: <input type="text" id="datepicker"></p>
-    </body>
+<p>
+  <%= f.label :title %><br>
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :release, "Release Date" %><br>
+  <%= f.text_field :release %>
+   <%#= f.datepicker :release %>
+  
+</p>
+
 <p>
   <%= f.label :Actor %><br>
   <%=f.text_field :actor %>
 </p>
-    <p>
-      <%= f.label :Director %><br>
-      <%=f.text_field :director %>
-    </p>
-    <p>
-      <%= f.submit %>
-    </p>
+<p>
+  <%= f.label :"Trailer Date" %><br>
+  <%=f.text_field :trailerdate %>
+</p>
+<p>
+  <%= f.label :Director %><br>
+  <%=f.text_field :director %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
 <% end %>
