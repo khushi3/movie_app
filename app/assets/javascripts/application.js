@@ -5,7 +5,7 @@
 // or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // compiled file.
-//
+//<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
@@ -15,3 +15,8 @@
 //= require jquery-ui
 //= require turbolinks
 //= require_tree .
+//= require jquery.MetaData
+//= require jquery.rating.js
+//= require jquery.rating.pack
+//= require jquery.form
+
